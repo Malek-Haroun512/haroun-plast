@@ -1,5 +1,8 @@
 # صفحة تحميل تطبيق هارون بلاست
 
+> ✅ **منشورة فعليًا:** https://malek-haroun512.github.io/haroun-plast/
+> المستودع: https://github.com/Malek-Haroun512/haroun-plast
+
 مجلد جاهز للنشر — ارفعه كما هو واحصل على رابط تحميل فوري.
 
 ## المحتويات
