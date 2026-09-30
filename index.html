@@ -152,19 +152,37 @@
       text-align: center;
       margin-top: 14px;
     }
-    .tg-link {
+    .contact-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .contact-btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      background: #eaf7ef;
-      border: 1px solid #cdeeda;
-      color: var(--green);
+      gap: 8px;
       text-decoration: none;
       font-weight: 800;
-      font-size: 16px;
-      padding: 14px;
+      font-size: 15.5px;
+      padding: 15px 10px;
       border-radius: 14px;
+      border: 1px solid transparent;
+      transition: transform .15s ease;
+    }
+    .contact-btn:active { transform: scale(.97); }
+    .contact-btn .ico { font-size: 20px; }
+    .contact-btn .lbl { display: block; font-size: 12px; font-weight: 700; opacity: .85; margin-top: 2px; }
+    .contact-btn .num { display: block; direction: ltr; unicode-bidi: isolate; font-size: 15px; letter-spacing: .3px; margin-top: 2px; }
+    .wa-btn {
+      background: #e9f9ef;
+      border-color: #c9edd7;
+      color: #128c4a;
+    }
+    .call-btn {
+      background: #eef4fb;
+      border-color: #cfe0f3;
+      color: #12508f;
     }
     footer {
       text-align: center;
@@ -223,10 +241,22 @@
 
     <section class="card">
       <h2>💬 الدعم والتواصل</h2>
-      <a class="tg-link" href="https://t.me/haroun_orders_bot" target="_blank" rel="noopener">
-        <span>✈️</span>
-        <span>راسلنا عبر تيليجرام — @haroun_orders_bot</span>
-      </a>
+      <div class="contact-actions">
+        <a class="contact-btn wa-btn" href="https://wa.me/963993137889" target="_blank" rel="noopener">
+          <span class="ico">💬</span>
+          <span>واتساب
+            <span class="num" dir="ltr">+963 993 137889</span>
+            <span class="lbl">راسلنا مباشرة</span>
+          </span>
+        </a>
+        <a class="contact-btn call-btn" href="tel:+963993137889">
+          <span class="ico">📞</span>
+          <span>اتصال هاتفي
+            <span class="num" dir="ltr">+963 993 137889</span>
+            <span class="lbl">اتصل بنا</span>
+          </span>
+        </a>
+      </div>
     </section>
   </main>
 
