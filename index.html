@@ -152,6 +152,61 @@
       text-align: center;
       margin-top: 14px;
     }
+    .iphone-card {
+      background: linear-gradient(160deg, var(--navy) 0%, var(--navy-dark) 100%);
+      color: #fff;
+    }
+    .iphone-card h2 { color: #fff; }
+    .iphone-lead { color: #b9c6e6; font-size: 14.5px; margin-bottom: 16px; }
+    .iphone-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(180deg, var(--cyan) 0%, var(--cyan-dark) 100%);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 17px;
+      padding: 15px;
+      border-radius: 14px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 16px rgba(2,136,209,.3);
+    }
+    .iphone-btn:active { transform: scale(.97); }
+    .iphone-steps { list-style: none; counter-reset: step; }
+    .iphone-steps li {
+      counter-increment: step;
+      position: relative;
+      padding: 0 42px 12px 0;
+      font-size: 14.5px;
+      color: #dce4f5;
+      min-height: 34px;
+    }
+    .iphone-steps li:last-child { padding-bottom: 0; }
+    .iphone-steps li::before {
+      content: counter(step);
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      background: #1a2744;
+      color: var(--cyan);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    .iphone-note {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #22325c;
+      color: #8fa5cc;
+      font-size: 13px;
+    }
     .contacts { display: grid; gap: 10px; }
     .contact-card {
       background: #f6f8fc;
@@ -227,8 +282,21 @@
       <p class="note">ملف APK رسمي موقّع — يعمل على جميع هواتف أندرويد الحديثة والقديمة.</p>
     </section>
 
+    <section class="card iphone-card">
+      <h2>📱 عندك آيفون (iPhone)؟</h2>
+      <p class="iphone-lead">التطبيق متاح أيضًا على الويب — يُثبَّت على شاشتك الرئيسية بضغطة واحدة، بدون App Store وبدون تحميل أي ملف.</p>
+      <a class="iphone-btn" href="https://malek-haroun512.github.io/" target="_blank" rel="noopener">🌐 افتح تطبيق هارون بلاست</a>
+      <ol class="iphone-steps">
+        <li>افتح الرابط أعلاه بمتصفح <b>Safari</b> على الآيفون</li>
+        <li>اضغط زر <b>المشاركة</b> ⬆︎ في أسفل الشاشة</li>
+        <li>اختر <b>«إضافة إلى الشاشة الرئيسية»</b></li>
+        <li>ستجد أيقونة <b>هارون بلاست</b> على شاشتك — تفتحه كالتطبيق تمامًا (بدون شريط المتصفح)</li>
+      </ol>
+      <p class="iphone-note">نفس الحساب ونفس المنتجات والطلبات — سجّل دخولك كالمعتاد.</p>
+    </section>
+
     <section class="card">
-      <h2>📦 طريقة التثبيت</h2>
+      <h2>📦 طريقة التثبيت (أندرويد)</h2>
       <ol class="steps">
         <li>اضغط زر «حمّل التطبيق» وانتظر اكتمال تنزيل الملف.</li>
         <li>افتح الملف المحمّل <b>HarounPlast…apk</b>، وإذا ظهر لك تنبيه، فعّل خيار <b>«التثبيت من مصادر غير معروفة»</b> لأذونية المتصفح أو مدير الملفات ثم عد للتأكيد.</li>
