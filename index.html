@@ -207,6 +207,62 @@
       color: #8fa5cc;
       font-size: 13px;
     }
+    .guide-intro {
+      background: #fdf6e3;
+      border: 1px solid #f0e0b0;
+      border-radius: 14px;
+      padding: 14px;
+      font-size: 15px;
+      color: #6b5310;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .guide-step {
+      background: #f6f8fc;
+      border: 1px solid #e6ebf5;
+      border-radius: 16px;
+      padding: 18px 14px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .guide-step .step-no {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--cyan);
+      font-weight: 800;
+      font-size: 20px;
+    }
+    .guide-step h3 {
+      font-size: 17.5px;
+      font-weight: 800;
+      color: var(--navy);
+      margin: 10px 0 6px;
+    }
+    .guide-step p {
+      font-size: 15.5px;
+      color: #33415c;
+      margin-bottom: 14px;
+    }
+    .guide-step img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      border: 1px solid #d3dcec;
+      background: #fff;
+    }
+    .guide-help {
+      background: #eaf7ef;
+      border: 1px solid #cdeeda;
+      border-radius: 16px;
+      padding: 18px 14px;
+      text-align: center;
+    }
+    .guide-help p { font-size: 15.5px; color: #14532d; font-weight: 700; margin-bottom: 12px; }
     .contacts { display: grid; gap: 10px; }
     .contact-card {
       background: #f6f8fc;
@@ -302,6 +358,65 @@
         <li>افتح الملف المحمّل <b>HarounPlast…apk</b>، وإذا ظهر لك تنبيه، فعّل خيار <b>«التثبيت من مصادر غير معروفة»</b> لأذونية المتصفح أو مدير الملفات ثم عد للتأكيد.</li>
         <li>افتح التطبيق بعد التثبيت وسجّل دخولك بحسابك المعتاد.</li>
       </ol>
+    </section>
+
+    <section class="card">
+      <h2>🧑‍🏫 دليل التثبيت بالصور</h2>
+      <p class="guide-intro">اتّبِع الصور خطوة بخطوة — كل صورة فيها <b>دائرة حمراء</b> على الزر اللي تضغطه.</p>
+
+      <div class="guide-step">
+        <span class="step-no">1</span>
+        <h3>افتح الرابط واضغط الزر الأزرق</h3>
+        <p>اضغط «حمّل التطبيق مجانًا» (الدائرة الحمراء) وانتظر حتى ينزل الملف.</p>
+        <img src="guide/s1-page.png" alt="صفحة التطبيق مع زر التحميل الأزرق" />
+      </div>
+
+      <div class="guide-step">
+        <span class="step-no">2</span>
+        <h3>افتح مجلد التنزيلات</h3>
+        <p>افتح تطبيق «الملفات» ← «عمليات التنزيل» ← اضغط على الملف <b>HarounPlast</b> (الدائرة الحمراء).</p>
+        <img src="guide/s2-files.png" alt="مجلد التنزيلات وملف التطبيق" />
+      </div>
+
+      <div class="guide-step">
+        <span class="step-no">3</span>
+        <h3>إذا ظهرت رسالة «لأغراض الأمان»</h3>
+        <p>اضغط «الإعدادات» (الدائرة الحمراء).</p>
+        <img src="guide/s3-blocked.png" alt="رسالة السماح لمصدر غير معروف" />
+      </div>
+
+      <div class="guide-step">
+        <span class="step-no">4</span>
+        <h3>فعّل المفتاح ثم ارجع</h3>
+        <p>شغّل المفتاح بجوار «السماح بتثبيت تطبيقات من هذا المصدر» (الدائرة الحمراء) ← ثم اضغط زر الرجوع في الهاتف.</p>
+        <img src="guide/s5-allowed-on.png" alt="شاشة تثبيت التطبيقات غير المعروفة مع المفتاح مفعّل" />
+      </div>
+
+      <div class="guide-step">
+        <span class="step-no">5</span>
+        <h3>اضغط «تثبيت»</h3>
+        <p>ارجع للهاتف واضغط «تثبيت» (الدائرة الحمراء).</p>
+        <img src="guide/s6-installer.png" alt="شاشة تثبيت التطبيق" />
+      </div>
+
+      <div class="guide-step">
+        <span class="step-no">6</span>
+        <h3>اضغط «فتح»</h3>
+        <p>بعد ما يكتمل التثبيت بتظهر رسالة «تم تثبيت التطبيق» — اضغط «فتح» (الدائرة الحمراء).</p>
+        <img src="guide/s7-installed.png" alt="رسالة تم تثبيت التطبيق" />
+      </div>
+
+      <div class="guide-step">
+        <span class="step-no">7</span>
+        <h3>سجّل دخولك</h3>
+        <p>اكتب اسم المستخدم وكلمة المرور ثم اضغط «دخول» — نفس بياناتك بالضبط.</p>
+        <img src="guide/s8-app.png" alt="شاشة تسجيل الدخول في التطبيق" />
+      </div>
+
+      <div class="guide-help">
+        <p>😟 إذا صار عندك أي مشكلة بالتثبيت — راسلنا على واتساب ونثبّتولك التطبيق خطوة بخطوة.</p>
+        <a class="mini-btn wa-btn" href="https://wa.me/963993137889" target="_blank" rel="noopener">💬 واتساب — نساعدك بالتثبيت</a>
+      </div>
     </section>
 
     <section class="card">
